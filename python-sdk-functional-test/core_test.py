@@ -118,4 +118,3 @@ class CoreLevelTest(SDKTestBase):
         with MyServer() as s:
             client.do_action_with_exception(request)
             self.assertTrue(s.url.find("CertName="))
-

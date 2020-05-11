@@ -34,7 +34,6 @@ from aliyunsdkram.request.v20150501.ListRolesRequest import ListRolesRequest
 from aliyunsdkram.request.v20150501.CreateRoleRequest import CreateRoleRequest
 from aliyunsdkram.request.v20150501.AttachPolicyToUserRequest import AttachPolicyToUserRequest
 
-
 # The unittest module got a significant overhaul
 # in 2.7, so if we're in 2.6 we can use the backported
 # version unittest2.
@@ -248,6 +247,7 @@ class SDKTestBase(TestCase):
 def disabled(func):
     def _decorator(func):
         pass
+
     return _decorator
 
 
@@ -288,4 +288,3 @@ class MyServer:
     @property
     def url(self):
         return self._url
-

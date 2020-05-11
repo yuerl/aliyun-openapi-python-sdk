@@ -15,7 +15,6 @@ from base import disabled
 
 
 class CredentialsTest(SDKTestBase):
-
     __name__ = 'CredentialsTest'
 
     def get_http_request(self, client, request, specific_signer=None):
@@ -83,4 +82,3 @@ class CredentialsTest(SDKTestBase):
         acs_client = AcsClient(region_id="cn-hangzhou", credential=ecs_ram_role_credential)
         request = DescribeRegionsRequest()
         response = acs_client.do_action_with_exception(request)
-
